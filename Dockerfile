@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:latest
 MAINTAINER Arvind Rawat <arvindr226@gmail.com>
 
 ARG TZ='Europe/Bucharest'
@@ -10,7 +10,7 @@ RUN apk upgrade --update && \
 
 # prerequisites
 RUN apk upgrade --update && \
-    apk add --update --no-cache bash \
+    apk add --no-cache bash \
 				curl \
 				curl-dev \
 				php7-intl \
