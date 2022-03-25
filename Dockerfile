@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:latest
 MAINTAINER Arvind Rawat <arvindr226@gmail.com>
 
 ARG TZ='Europe/Bucharest'
@@ -63,7 +63,7 @@ RUN apk add --no-cache bash \
 				php7-cgi \
 				php7-ctype \
 				php7-mcrypt \
-				php7-wddx \
+#				php7-wddx \
 				php7-bcmath \
 				php7-calendar \
 				php7-tidy \
