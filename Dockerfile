@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.13
 MAINTAINER Arvind Rawat <arvindr226@gmail.com>
 
 ARG TZ='Europe/Bucharest'
