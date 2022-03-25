@@ -81,7 +81,7 @@ RUN apk add --no-cache bash \
   				apache2 \
 				libxml2-dev \
 				apache2-utils
-RUN ln -s /usr/bin/php7 /usr/bin/php
+#RUN ln -s /usr/bin/php7 /usr/bin/php
 RUN curl -sS https://getcomposer.org/installer | php7 -- --install-dir=/usr/bin --filename=composer 
 
 RUN  rm -rf /var/cache/apk/*
