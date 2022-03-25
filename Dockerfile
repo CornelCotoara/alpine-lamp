@@ -44,7 +44,7 @@ RUN apk add --no-cache bash \
 				php8-gd  \
 				php8-gettext \
 				php8-json \
-				php8-xml \
+				php8-pecl-xmlrpc \
 				php8 \
 				php8-iconv \
 				php8-sysvshm \
@@ -62,7 +62,7 @@ RUN apk add --no-cache bash \
 				php8-apache2 \
 				php8-cgi \
 				php8-ctype \
-				php8-mcrypt \
+				php8-pecl-mcrypt \
 #				php8-wddx \
 				php8-bcmath \
 				php8-calendar \
