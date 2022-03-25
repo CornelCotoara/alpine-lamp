@@ -9,8 +9,7 @@ RUN apk --update -- upgrade && \
   date
 
 # prerequisites
-RUN apk upgrade --update && \
-    apk add --no-cache bash \
+RUN apk add --no-cache bash \
 				curl \
 				curl-dev \
 				php7-intl \
