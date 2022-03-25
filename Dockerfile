@@ -12,77 +12,77 @@ RUN apk --update -- upgrade && \
 RUN apk add --no-cache bash \
 				curl \
 				curl-dev \
-				php7-intl \
-				php7-openssl \
-				php7-dba \
-				php7-sqlite3 \
-				php7-pear \
-				php7-phpdbg \
-				php7-litespeed \
-				php7-gmp \
-				php7-pdo_mysql \
-				php7-pcntl \
-				php7-common \
-				php7-xsl \
-				php7-fpm \	
-				php7-mysqlnd \
-				php7-enchant \
-				php7-pspell \
-				php7-snmp \
-				php7-doc \
-				php7-mbstring \
-				php7-dev \
-				php7-xmlrpc \
-				php7-embed \
-				php7-xmlreader \
-				php7-pdo_sqlite \
-				php7-exif \
-				php7-opcache \
-				php7-ldap \
-				php7-posix \	
-				php7-session \
-				php7-gd  \
-				php7-gettext \
-				php7-json \
-				php7-xml \
-				php7 \
-				php7-iconv \
-				php7-sysvshm \
-				php7-curl \
-				php7-shmop \
-				php7-odbc \
-				php7-phar \
-				php7-pdo_pgsql \
-				php7-imap \
-				php7-pdo_dblib \
-				php7-pgsql \
-				php7-pdo_odbc \
-				php7-xdebug \
-				php7-zip \
-				php7-apache2 \
-				php7-cgi \
-				php7-ctype \
-				php7-mcrypt \
-#				php7-wddx \
-				php7-bcmath \
-				php7-calendar \
-				php7-tidy \
-				php7-dom \
-				php7-sockets \
-				php7-soap \
-				php7-apcu \
-				php7-sysvmsg \
-				php7-zlib \
-				php7-ftp \
-				php7-sysvsem \ 
-				php7-pdo \
-				php7-bz2 \
-				php7-mysqli \
+				php8-intl \
+				php8-openssl \
+				php8-dba \
+				php8-sqlite3 \
+				php8-pear \
+				php8-phpdbg \
+				php8-litespeed \
+				php8-gmp \
+				php8-pdo_mysql \
+				php8-pcntl \
+				php8-common \
+				php8-xsl \
+				php8-fpm \	
+				php8-mysqlnd \
+				php8-enchant \
+				php8-pspell \
+				php8-snmp \
+				php8-doc \
+				php8-mbstring \
+				php8-dev \
+				php8-xmlrpc \
+				php8-embed \
+				php8-xmlreader \
+				php8-pdo_sqlite \
+				php8-exif \
+				php8-opcache \
+				php8-ldap \
+				php8-posix \	
+				php8-session \
+				php8-gd  \
+				php8-gettext \
+				php8-json \
+				php8-xml \
+				php8 \
+				php8-iconv \
+				php8-sysvshm \
+				php8-curl \
+				php8-shmop \
+				php8-odbc \
+				php8-phar \
+				php8-pdo_pgsql \
+				php8-imap \
+				php8-pdo_dblib \
+				php8-pgsql \
+				php8-pdo_odbc \
+				php8-xdebug \
+				php8-zip \
+				php8-apache2 \
+				php8-cgi \
+				php8-ctype \
+				php8-mcrypt \
+#				php8-wddx \
+				php8-bcmath \
+				php8-calendar \
+				php8-tidy \
+				php8-dom \
+				php8-sockets \
+				php8-soap \
+				php8-apcu \
+				php8-sysvmsg \
+				php8-zlib \
+				php8-ftp \
+				php8-sysvsem \ 
+				php8-pdo \
+				php8-bz2 \
+				php8-mysqli \
   				apache2 \
 				libxml2-dev \
 				apache2-utils
-#RUN ln -s /usr/bin/php7 /usr/bin/php
-RUN curl -sS https://getcomposer.org/installer | php7 -- --install-dir=/usr/bin --filename=composer 
+#RUN ln -s /usr/bin/php8 /usr/bin/php
+RUN curl -sS https://getcomposer.org/installer | php8 -- --install-dir=/usr/bin --filename=composer 
 
 RUN  rm -rf /var/cache/apk/*
 
