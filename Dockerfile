@@ -36,7 +36,7 @@ RUN apk add --no-cache bash \
 				php8-doc \
 				php8-mbstring \
 				php8-dev \
-				php8-xmlrpc \
+				php8-pecl-xmlrpc \
 				php8-embed \
 				php8-xmlreader \
 				php8-pdo_sqlite \
