@@ -1,7 +1,16 @@
 FROM alpine:3.15
 MAINTAINER Arvind Rawat <arvindr226@gmail.com>
 
-RUN apk add --update --no-cache bash \
+ARG TZ='Europe/Bucharest'
+ENV DEFAULT_TZ ${TZ}
+RUN apk upgrade --update && \
+  apk add --no-cache tzdata && \
+  cp /usr/share/zoneinfo/${DEFAULT_TZ} /etc/localtime && \
+  date
+
+# prerequisites
+RUN apk upgrade --update && \
+    apk add --update --no-cache bash \
 				curl \
 				curl-dev \
 				php7-intl \
