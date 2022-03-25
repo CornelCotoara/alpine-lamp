@@ -1,4 +1,4 @@
-FROM alpine:3.13
+FROM alpine:edge
 MAINTAINER Arvind Rawat <arvindr226@gmail.com>
 
 ARG TZ='Europe/Bucharest'
@@ -8,6 +8,9 @@ RUN apk --update -- upgrade && \
   cp /usr/share/zoneinfo/${DEFAULT_TZ} /etc/localtime && \
   date
 
+RUN set -xe \
+  && echo "http://dl-cdn.alpinelinux.org/alpine/edge/comunity"  >> /etc/apk/repositories \
+  && apk --update -- upgrade
 # prerequisites
 RUN apk add --no-cache bash \
 				curl \
