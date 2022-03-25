@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.15
 MAINTAINER Arvind Rawat <arvindr226@gmail.com>
 
 RUN apk add --update --no-cache bash \
