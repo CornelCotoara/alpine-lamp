@@ -3,7 +3,7 @@ MAINTAINER Arvind Rawat <arvindr226@gmail.com>
 
 ARG TZ='Europe/Bucharest'
 ENV DEFAULT_TZ ${TZ}
-RUN apk upgrade --update && \
+RUN apk --update -- upgrade && \
   apk add --no-cache tzdata && \
   cp /usr/share/zoneinfo/${DEFAULT_TZ} /etc/localtime && \
   date
