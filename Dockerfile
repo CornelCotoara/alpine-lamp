@@ -9,6 +9,7 @@ RUN apk --update -- upgrade && \
   date
 
 RUN set -xe \
+  && echo "http://dl-cdn.alpinelinux.org/alpine/edge/edge"  >> /etc/apk/repositories \
   && echo "http://dl-cdn.alpinelinux.org/alpine/edge/comunity"  >> /etc/apk/repositories \
   && echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing"  >> /etc/apk/repositories \
   && apk --update -- upgrade
@@ -85,7 +86,7 @@ RUN apk add --no-cache bash \
   				apache2 \
 				libxml2-dev \
 				apache2-utils \
-				apache2‑ctl
+				apache2-ctl
 #RUN ln -s /usr/bin/php8 /usr/bin/php
 RUN curl -sS https://getcomposer.org/installer | php8 -- --install-dir=/usr/bin --filename=composer 
 
