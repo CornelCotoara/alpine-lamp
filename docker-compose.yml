@@ -2,7 +2,7 @@ version: "2.0"
 services:
   web:
     container_name: apache_server
-    image: arvindr226/alpine-lamp
+    image: ghcr.io/cornelcotoara/alpine-lamp:master
     ports:
        - "80:80"
        - "443:443"
@@ -15,17 +15,17 @@ services:
 #    ports:
 #      - 3306:3306
     environment:
-      MYSQL_DATABASE: gotechnies
-      MYSQL_USER: gotechnies
-      MYSQL_PASSWORD: gotechnies
-      MYSQL_ROOT_PASSWORD: gotechnies
+      MYSQL_DATABASE: changeme
+      MYSQL_USER: changeme
+      MYSQL_PASSWORD: changeme
+      MYSQL_ROOT_PASSWORD: changeme
 #    restart: always
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
     environment:
      - PMA_ARBITRARY=1
-#    restart: always
+    restart: always
     ports:
      - 8080:80
     volumes:
