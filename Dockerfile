@@ -84,7 +84,8 @@ RUN apk add --no-cache bash \
 				php8-mysqli \
   				apache2 \
 				libxml2-dev \
-				apache2-utils
+				apache2-utils \
+				apache2‑ctl
 #RUN ln -s /usr/bin/php8 /usr/bin/php
 RUN curl -sS https://getcomposer.org/installer | php8 -- --install-dir=/usr/bin --filename=composer 
 
